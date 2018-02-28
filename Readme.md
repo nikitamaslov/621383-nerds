@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Никита Маслов](https://up.htmlacademy.ru/htmlcss/20/user/621383).
-* Наставник: [Соня Лапшина](https://up.htmlacademy.ru/htmlcss/20/user/139041)
+* Наставник: [Соня Лапшина](https://up.htmlacademy.ru/htmlcss/20/user/139041).
 
 ---
 
