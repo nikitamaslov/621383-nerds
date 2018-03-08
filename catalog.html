@@ -8,14 +8,22 @@
 
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-logo" href="/index.html">
+        <a class="main-logo" href="index.html">
           <img src="http://placehold.it/150x100" width="190" height="90" alt="Nerds">
         </a>
         <ul class="site-navigation">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li>
+            <a href="#">Студия</a>
+          </li>
+          <li>
+            <a href="#">Клиенты</a>
+          </li>
+          <li>
+            <a>Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
         </ul>
         <ul class="user-navigation">
           <li>Корзина</li>
@@ -48,7 +56,6 @@
         -->
       </aside>
 
-      <!-- Как тут сделать меняющиеся шаблоны от наведения - не знаю-->
       <section class="templates">
         <p>Сортировать:</p>
         <ul class="sorting">
@@ -56,21 +63,82 @@
           <li>По типу</li>
           <li>По названию</li>
         </ul>
+        <button></button>
+        <button></button>
         <ul class="templates-list">
-          <li class="templates-item"><img src="http://placehold.it/150x100" width="360" height="615" alt=""></li>
-          <li class="templates-item"><img src="http://placehold.it/150x100" width="360" height="615" alt=""></li>
-          <li class="templates-item"><img src="http://placehold.it/150x100" width="360" height="615" alt=""></li>
-          <li class="templates-item"><img src="http://placehold.it/150x100" width="360" height="615" alt=""></li>
-          <li class="templates-item"><img src="http://placehold.it/150x100" width="360" height="615" alt=""></li>
-          <li class="templates-item"><img src="http://placehold.it/150x100" width="360" height="615" alt=""></li>
+          <li class="templates-item">
+            <img src="http://placehold.it/150x100" width="360" height="615" alt="">
+            <div>
+              <a href="#">
+                <p>Sedona</p>
+              </a>
+              <p>Информационный сайт для туристов</p>
+              <button>9900 руб.</button>
+            </div>
+          </li>
+          <li class="templates-item">
+            <img src="http://placehold.it/150x100" width="360" height="615" alt="">
+            <div>
+              <a href="#">
+                <p>Pink app</p>
+              </a>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <button>9900 руб.</button>
+            </div>
+          </li>
+          <li class="templates-item">
+            <img src="http://placehold.it/150x100" width="360" height="615" alt="">
+            <div>
+              <a href="#">
+                <p>Barbershop</p>
+              </a>
+              <p>Сайт салона красоты. Для мужчин, да.</p>
+              <button>9900 руб.</button>
+            </div>
+          </li>
+          <li class="templates-item">
+            <img src="http://placehold.it/150x100" width="360" height="615" alt="">
+            <div>
+              <a href="#">
+                <p>Mishka</p>
+              </a>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <button>9900 руб.</button>
+            </div>
+          </li>
+          <li class="templates-item">
+            <img src="http://placehold.it/150x100" width="360" height="615" alt="">
+            <div>
+              <a href="#">
+                <p>A plus</p>
+              </a>
+              <p>Лендинг курсов повышения квалификации</p>
+              <button>9900 руб.</button>
+            </div>
+          </li>
+          <li class="templates-item">
+            <img src="http://placehold.it/150x100" width="360" height="615" alt="">
+            <div>
+              <a href="#">
+                <p>Кваст</p>
+              </a>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <button>9900 руб.</button>
+            </div>
+          </li>
         </ul>
         <ul class="templates-pages">
-          <li class="templates-pages-item"><a href="#"></a>1</li>
-          <li class="templates-pages-item"><a href="#"></a>2</li>
-          <li class="templates-pages-item"><a href="#"></a>3</li>
-          <!--так и не понял куда выносить кнопку "следующая"-->
-          <li class="templates-pages-item">Следующая</li>
+          <li class="templates-pages-item">
+            <a href="#">1</a>
+          </li>
+          <li class="templates-pages-item">
+            <a href="#">2</a>
+          </li>
+          <li class="templates-pages-item">
+            <a href="#">3</a>
+          </li>
         </ul>
+        <button>Следующая</button>
       </section>
       <section class="navigation">
         <div class="navigation-map">
@@ -84,12 +152,12 @@
           <p>
             тел. +7(812) 275-75-75
           </p>
-          <button> Напишите нам</button>
+          <a href="#">Напишите нам</a>
           <div class="write-us">
-            <b>Напишите нам</b>
+            <p>Напишите нам</p>
             <p>Ваше имя:</p>
             <p>Ваш email:</p>
-            <p>Текс письма</p>
+            <p>Текст письма</p>
           </div>
         </div>
       </section>
@@ -98,9 +166,15 @@
     <footer class="main-footer">
       <section class="social">
         <ul class="social-button-list">
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li>
+            <a class="social-button" href="#">Вконтакте</a>
+          </li>
+          <li>
+            <a class="social-button" href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a class="social-button" href="#">Инстаграм</a>
+          </li>
         </ul>
         <p>Давайте дружить, это выгодно!</p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
