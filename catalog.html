@@ -27,7 +27,7 @@
         </ul>
         <ul class="user-navigation">
           <li>
-            <a href="#>">Корзина</a>
+            <a href="#">Корзина</a>
           </li>
         </ul>
       </nav>
@@ -35,57 +35,72 @@
 
     <main>
       <h1>Магазин готовых шаблонов</h1>
-      <aside class="price">
-        <p>Стоимость</p>
-        <div class="price-slider">
-        </div>
-        <p>Сетка</p>
-        <ul class="grid">
-          <li>
-            <p>
-              Адаптивная
-            </p>
-          </li>
-          <li>
-            <p>
-              Фиксированная
-            </p>
-          </li>
-          <li>
-            <p>
-              Резиновая
-            </p>
-          </li>
-        </ul>
-        <p>Особенности</p>
-        <ul class="qualities">
-          <li>
-            <p>
-              Слайдер
-            </p>
-          </li>
-          <li>
-            <p>
-              Блок преимуществ
-            </p>
-          </li>
-          <li>
-            <p>
-              Новости
-            </p>
-          </li>
-          <li>
-            <p>
-              Галерея
-            </p>
-          </li>
-          <li>
-            <p>
-              Корзина
-            </p>
-          </li>
-        </ul>
-        <button>Показать</button>
+      <aside class="options-form">
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="amount">
+                  <div class="toggle-min"></div>
+                  <div class="toggle-max"></div>
+                </div>
+              </div>
+              <div class="price">
+                <label class="price-min">
+                  от
+                  <input type="number" name="price-min" value="0"/>
+                </label>
+                <label class="price-max">
+                до
+                <input type="number" name="price-max" value="15000"/>
+              </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="filter-input-radio" type="radio" name="grids" value="adapted" id="filter-adapted"/>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input-radio" type="radio" name="grids" value="fixed" id="filter-fixed"/>
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input-radio" type="radio" name="grids" value="exented" id="filter-exented"/>
+                <label for="filter-adaptive">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности</legend>
+               <ul>
+                 <li class="filter-option">
+                   <input class="filter-input-checkbox" type="checkbox" name="slider" id="option-slider" checked>
+                   <label for="option-slider">Слайдер</label>
+                 </li>
+                 <li class="filter-option">
+                   <input class="filter-input-checkbox" type="checkbox" name="advantages-block" id="option-advantages">
+                   <label for="option-advantages">Блок преимуществ</label>
+                 </li>
+                 <li class="filter-option">
+                   <input class="filter-input-checkbox" type="checkbox" name="news" id="option-news" checked>
+                   <label for="option-news">Новости</label>
+                 </li>
+                 <li class="filter-option">
+                   <input class="filter-input-checkbox" type="checkbox" name="gallery" id="option-gallery">
+                   <label for="option-gallery">Галерея</label>
+                 </li>
+                 <li class="filter-option">
+                   <input class="filter-input-checkbox" type="checkbox" name="basket" id="option-basket">
+                   <label for="option-basket">Корзина</label>
+                 </li>
+               </ul>
+          </fieldset>
+          <button class="filter-button" type="sumbit">Показать</button>
       </aside>
 
       <section class="templates">
@@ -179,8 +194,9 @@
         <a href="#">Следующая</a>
       </section>
       <section class="navigation">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
         <div class="navigation-map">
-          <img src="img/map.jpg" width="1440" height="416" alt="map">
+          <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу: Санкт-Петербург, ул. Большая Конюшенная, дом 19/8">
           <img src="img/map-marker.png" width="231" height="190" alt="nerds marker">
         </div>
         <div class="navigation-address">
@@ -195,9 +211,22 @@
           <button>Напишите нам</button>
           <div class="write-us">
             <p>Напишите нам</p>
-            <p>Ваше имя:</p>
-            <p>Ваш email:</p>
-            <p>Текст письма</p>
+            <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+              <p class="feedback-item">
+                <label for="feedback-name">Ваше имя:</label>
+                <input id="feedback-name" type="text" name="name" value="" placeholder="Имя Фамилия"/>
+              </p>
+              <p class="feedback-item">
+                <label for="feedback-email">Ваш e-mail:</label>
+                <input id="feedback-email" type="text" name="email" value="" placeholder="email@example.com"/>
+              </p>
+              <p class="feedback-item">
+                <label for="feedback-text">Текст письма:</label>
+                <input id="feedback-text" type="text" name="text" value="" placeholder="В свободной форме"/>
+              </p>
+              <button class="button" type="submit">Отправить</button>
+            </form>
+            <button class="modal-close" type="button"></button>
           </div>
         </div>
       </section>
@@ -206,24 +235,24 @@
     <footer class="main-footer">
       <section class="social">
         <ul class="social-button-list">
-        <li>
-          <a class="social-button" href="#">
-            <img src="img/vk-icon.svg" width="26" height="15" alt="vkontakte">
-            <span>Вконтакте</span>
-          </a>
-        </li>
-        <li>
-          <a class="social-button" href="#">
-            <img src="img/fb-icon.svg" width="12" height="22" alt="facebook">
-            <span>Фейсбук</span>
-          </a>
-        </li>
-        <li>
-          <a class="social-button" href="#">
-            <img src="img/insta-icon.svg" width="21" height="21" alt="instagram">
-            <span>Инстаграм</span>
-          </a>
-        </li>
+          <li>
+            <a href="#" class="social-button" aria-label="Вконтакте">
+              <img src="img/vk-icon.svg" width="26" height="15" alt="vkontakte">
+              <span>Вконтакте</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-button" aria-label="Фэйсбук">
+              <img src="img/fb-icon.svg" width="12" height="22" alt="facebook">
+              <span>Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-button" aria-label="Инстаграм">
+              <img src="img/insta-icon.svg" width="21" height="21" alt="instagram">
+              <span>Instagram</span>
+            </a>
+          </li>
         </ul>
         <p>Давайте дружить, это выгодно!</p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
