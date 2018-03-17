@@ -41,10 +41,9 @@
             <legend>Стоимость:</legend>
             <div class="range-filter">
               <div class="range-controls">
-                <div class="amount">
-                  <div class="toggle-min"></div>
-                  <div class="toggle-max"></div>
-                </div>
+                <div class="toggle-min"></div>
+                <div class="amount"></div>
+                <div class="toggle-max"></div>
               </div>
               <div class="price">
                 <label class="price-min">
@@ -62,8 +61,8 @@
             <legend>Сетка:</legend>
             <ul>
               <li class="filter-option">
-                <input class="filter-input-radio" type="radio" name="grids" value="adapted" id="filter-adapted"/>
-                <label for="filter-adaptive">Адаптивная</label>
+                <input class="filter-input-radio" type="radio" name="grids" value="adapted" id="filter-adapted" checked/>
+                <label for="filter-adapted">Адаптивная</label>
               </li>
               <li class="filter-option">
                 <input class="filter-input-radio" type="radio" name="grids" value="fixed" id="filter-fixed"/>
@@ -71,7 +70,7 @@
               </li>
               <li class="filter-option">
                 <input class="filter-input-radio" type="radio" name="grids" value="exented" id="filter-exented"/>
-                <label for="filter-adaptive">Резиновая</label>
+                <label for="filter-exented">Резиновая</label>
               </li>
             </ul>
           </fieldset>
@@ -100,104 +99,111 @@
                  </li>
                </ul>
           </fieldset>
-          <button class="filter-button" type="sumbit">Показать</button>
+          <button class="filter-button" type="submit">Показать</button>
+        </form>
       </aside>
 
       <section class="templates">
         <p>Сортировать:</p>
         <ul class="sorting">
-          <li>По цене</li>
-          <li>По типу</li>
-          <li>По названию</li>
+          <li>
+            <a href="#" aria-label="Сортировать по цене">По цене</a>
+          </li>
+          <li>
+            <a href="#" aria-label="Сортировать по типу">По типу</a>
+          </li>
+          <li>
+            <a href="#" aria-label="Сортировать по названию">По названию</a>
+          </li>
         </ul>
-        <button>
+        <a href="#" aria-label="Сортировать по возрастанию">
           <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/>
           </svg>
-        </button>
-        <button>
+        </a>
+        <a href="#" aria-label="Сортировать по убыванию">
           <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/>
           </svg>
-        </button>
+        </a>
         <ul class="templates-list">
           <li class="templates-item">
-            <img src="img/img-sedona.jpg" width="360" height="576" alt="sedona">
+            <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон Sedona">
             <div>
               <a href="#">
                 <p>Sedona</p>
               </a>
               <p>Информационный сайт для туристов</p>
-              <button>9900 руб.</button>
+              <a href="#">9900 руб.</a>
             </div>
           </li>
           <li class="templates-item">
-            <img src="img/img-pink.jpg" width="360" height="576" alt="pink">
+            <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон Pink">
             <div>
               <a href="#">
                 <p>Pink app</p>
               </a>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <button>9900 руб.</button>
+              <a href="#">9900 руб.</a>
             </div>
           </li>
           <li class="templates-item">
-            <img src="img/img-barbershop.jpg" width="360" height="576" alt="barbershop">
+            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон Barbershop">
             <div>
               <a href="#">
                 <p>Barbershop</p>
               </a>
               <p>Сайт салона красоты. Для мужчин, да.</p>
-              <button>9900 руб.</button>
+              <a href="#">9900 руб.</a>
             </div>
           </li>
           <li class="templates-item">
-            <img src="img/img-mishka.jpg" width="360" height="576" alt="mishka">
+            <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон Mishka">
             <div>
               <a href="#">
                 <p>Mishka</p>
               </a>
               <p>Интернет-магазин вязаных игрушек</p>
-              <button>9900 руб.</button>
+              <a href="#">9900 руб.</a>
             </div>
           </li>
           <li class="templates-item">
-            <img src="img/img-aplus.jpg" width="360" height="576" alt="a plus">
+            <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон A plus">
             <div>
               <a href="#">
                 <p>A plus</p>
               </a>
               <p>Лендинг курсов повышения квалификации</p>
-              <button>9900 руб.</button>
+              <a href="#">9900 руб.</a>
             </div>
           </li>
           <li class="templates-item">
-            <img src="img/img-kvast.jpg" width="360" height="576" alt="kvast">
+            <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон Kvast">
             <div>
               <a href="#">
                 <p>Кваст</p>
               </a>
               <p>Промо-сайт производителя крафтового кваса</p>
-              <button>9900 руб.</button>
+              <a href="#">9900 руб.</a>
             </div>
           </li>
         </ul>
         <ul class="templates-pages">
           <li class="templates-pages-item">
-            <a href="#">1</a>
+            <a href="#" aria-label="Страница 1">1</a>
           </li>
           <li class="templates-pages-item">
-            <a href="#">2</a>
+            <a href="#" aria-label="Страница 2">2</a>
           </li>
           <li class="templates-pages-item">
-            <a href="#">3</a>
+            <a href="#" aria-label="Страница 3">3</a>
           </li>
         </ul>
-        <a href="#">Следующая</a>
+        <a href="#" aria-label="Следующая страница">Следующая</a>
       </section>
       <section class="navigation">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <div class="navigation-map">
           <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу: Санкт-Петербург, ул. Большая Конюшенная, дом 19/8">
-          <img src="img/map-marker.png" width="231" height="190" alt="nerds marker">
+          <img src="img/map-marker.png" width="367" height="190" alt="nerds marker">
         </div>
         <div class="navigation-address">
           <h3>NERDS DESIGN STUDIO</h3>
@@ -222,7 +228,7 @@
               </p>
               <p class="feedback-item">
                 <label for="feedback-text">Текст письма:</label>
-                <input id="feedback-text" type="text" name="text" value="" placeholder="В свободной форме"/>
+                <textarea id="feedback-text" name="text" placeholder="В свободной форме"></textarea>
               </p>
               <button class="button" type="submit">Отправить</button>
             </form>
